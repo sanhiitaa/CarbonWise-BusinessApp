@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="CarbonWise helps logistics teams measure, compare and reduce transport emissions.">
+  <title>CarbonWise | Measure. Compare. Reduce.</title>
+  <link rel="icon" href="images/carbonwise-mark.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.jsdelivr.net/npm/jspdf@2.5.1/dist/jspdf.umd.min.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <a class="brand" href="#home" aria-label="CarbonWise home">
+      <img src="images/carbonwise-mark.svg" alt="" class="brand-mark">
+      <span class="brand-copy"><strong>CarbonWise</strong><small>Measure. Compare. Reduce.</small></span>
+    </a>
+    <button class="menu-toggle" id="menuToggle" aria-label="Open navigation" aria-expanded="false">☰</button>
+    <nav class="main-nav" id="mainNav" aria-label="Main navigation">
+      <a href="#home" class="nav-link active">Home</a>
+      <a href="#about" class="nav-link">About</a>
+      <a href="#services" class="nav-link">Services</a>
+      <a href="#dashboard" class="nav-link">Dashboard</a>
+      <a href="#calculator" class="nav-link">Calculator</a>
+      <a href="#compare" class="nav-link">Compare</a>
+      <a href="#planner" class="nav-link">Reduction planner</a>
+      <a href="#contact" class="nav-link">Contact</a>
+    </nav>
+  </header>
+
+  <main id="main">
+    <section class="hero section-wrap" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="pulse-dot"></span> SUSTAINABILITY INTELLIGENCE FOR LOGISTICS</div>
+        <h1>Move goods.<br><span>Not the planet's limits.</span></h1>
+        <p class="hero-lede">Make transport emissions visible, compare freight choices with confidence, and turn carbon targets into measurable action.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#dashboard">Explore the dashboard <span aria-hidden="true">↗</span></a>
+          <a class="btn btn-secondary" href="#calculator">Calculate emissions</a>
+        </div>
+        <div class="hero-proof">
+          <div class="proof-icon">✓</div>
+          <p><strong>Designed for practical decisions</strong><br><span>Environmental, financial and operational metrics in one place.</span></p>
+        </div>
+      </div>
+      <div class="hero-visual" aria-label="Illustration of a sustainable freight network">
+        <div class="visual-orbit orbit-one"></div><div class="visual-orbit orbit-two"></div>
+        <div class="visual-label label-top"><span class="mini-dot green"></span> Lower-carbon freight</div>
+        <div class="visual-core">
+          <img src="images/carbonwise-mark.svg" alt="" class="visual-logo">
+          <strong>CarbonWise</strong><span>Logistics intelligence</span>
+        </div>
+        <div class="visual-node node-truck"><span>▰</span><small>Road</small></div>
+        <div class="visual-node node-train"><span>▤</span><small>Rail</small></div>
+        <div class="visual-node node-ship"><span>⌁</span><small>Sea</small></div>
+        <div class="visual-node node-plane"><span>✈</span><small>Air</small></div>
+        <div class="visual-label label-bottom"><span class="mini-dot mint"></span> Measure → Compare → Reduce</div>
+      </div>
+    </section>
+
+    <section class="trust-strip">
+      <div><strong>5</strong><span>transport options</span></div>
+      <div><strong>3</strong><span>interactive tools</span></div>
+      <div><strong>100%</strong><span>browser-based demo</span></div>
+      <div><strong>₹ INR</strong><span>India-focused context</span></div>
+    </section>
+
+    <section class="section-wrap section-block" id="about">
+      <div class="section-heading">
+        <div><div class="eyebrow">ABOUT CARBONWISE</div><h2>Better logistics decisions start with better visibility.</h2></div>
+        <p>CarbonWise is a sustainability intelligence prototype for GreenHaul Logistics, a fictional Indian freight operator. It brings carbon estimates, transport comparisons and reduction targets into one simple workspace.</p>
+      </div>
+      <div class="feature-grid">
+        <article class="feature-card"><div class="feature-icon icon-leaf">↗</div><h3>Measure impact</h3><p>Estimate emissions from fuel or electricity use and make the assumptions visible.</p></article>
+        <article class="feature-card"><div class="feature-icon icon-bars">▥</div><h3>Compare choices</h3><p>Review indicative emissions, costs and transit times across transport modes.</p></article>
+        <article class="feature-card"><div class="feature-icon icon-target">◎</div><h3>Plan reductions</h3><p>Translate an emissions-reduction ambition into a clear emissions budget.</p></article>
+      </div>
+    </section>
+
+    <section class="services-band" id="services">
+      <div class="section-wrap section-block">
+        <div class="section-heading">
+          <div><div class="eyebrow">THE PLATFORM</div><h2>Three tools. One clearer picture.</h2></div>
+          <p>Start with a quick estimate, examine the freight trade-offs, then define a target that your team can track.</p>
+        </div>
+        <div class="service-grid">
+          <article class="service-card"><div class="service-number">01</div><div class="service-symbol">◉</div><h3>Carbon calculator</h3><p>Estimate vehicle emissions using distance, energy consumption and a factor you can adjust.</p><a href="#calculator" class="text-link">Open calculator <span>→</span></a></article>
+          <article class="service-card"><div class="service-number">02</div><div class="service-symbol">⇄</div><h3>Transport comparison</h3><p>Compare road, rail, sea, air and electric options on illustrative cost, time and emissions.</p><a href="#compare" class="text-link">Compare modes <span>→</span></a></article>
+          <article class="service-card"><div class="service-number">03</div><div class="service-symbol">◎</div><h3>Reduction planner</h3><p>Set a reduction percentage and calculate the resulting carbon budget and required reduction.</p><a href="#planner" class="text-link">Set a target <span>→</span></a></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="dashboard">
+      <div class="section-heading dashboard-heading">
+        <div><div class="eyebrow">GREENHAUL LOGISTICS · DEMO WORKSPACE</div><h2>Operations at a glance</h2><p class="section-subtitle">Illustrative monthly snapshot · October 2026</p></div>
+        <div class="heading-actions"><button class="btn btn-secondary btn-small" id="saveBtn">Save workspace</button><button class="btn btn-quiet btn-small" id="resetBtn">Reset demo</button></div>
+      </div>
+      <div class="demo-notice"><span>ⓘ</span><p><strong>Demo data:</strong> GreenHaul Logistics is fictional. Dashboard figures and comparison assumptions are illustrative and are not audited carbon-accounting results or live carrier data.</p></div>
+      <div class="kpi-grid">
+        <article class="kpi-card"><div class="kpi-top"><span>Total emissions</span><span class="kpi-icon">♧</span></div><div class="kpi-value" id="kpiEmissions">42.8 <small>t CO₂</small></div><div class="kpi-foot positive">↓ 8.4% <span>vs. previous month</span></div></article>
+        <article class="kpi-card"><div class="kpi-top"><span>Shipments handled</span><span class="kpi-icon">▣</span></div><div class="kpi-value" id="kpiShipments">1,284</div><div class="kpi-foot neutral">Across 5 transport options</div></article>
+        <article class="kpi-card"><div class="kpi-top"><span>Transport spend</span><span class="kpi-icon">₹</span></div><div class="kpi-value" id="kpiSpend">₹18.6L</div><div class="kpi-foot positive">↓ 3.2% <span>vs. previous month</span></div></article>
+        <article class="kpi-card"><div class="kpi-top"><span>On-time delivery</span><span class="kpi-icon">◷</span></div><div class="kpi-value" id="kpiOnTime">94.2<small>%</small></div><div class="kpi-foot positive">↑ 1.6 pts <span>vs. previous month</span></div></article>
+      </div>
+      <div class="dashboard-grid">
+        <article class="panel chart-panel">
+          <div class="panel-heading"><div><h3>Emissions trend</h3><p>Monthly transport emissions · tonnes CO₂</p></div><span class="chart-legend"><i></i> Total emissions</span></div>
+          <div class="chart-wrap"><svg id="trendChart" viewBox="0 0 620 245" role="img" aria-label="Line chart showing monthly emissions trend"></svg></div>
+        </article>
+        <article class="panel mode-panel">
+          <div class="panel-heading"><div><h3>Emissions by mode</h3><p>Share of demo emissions</p></div></div>
+          <div id="modeBars" class="mode-bars"></div>
+          <a href="#compare" class="text-link">Explore mode comparison <span>→</span></a>
+        </article>
+      </div>
+      <div class="dashboard-bottom">
+        <article class="panel insight-panel"><div class="insight-mark">✦</div><div><div class="eyebrow">MANAGER'S NOTE</div><h3>Focus on the biggest levers first.</h3><p>Use the mode comparison to identify lower-emission alternatives, then set a reduction budget. A lower-carbon option should also meet your service and cost requirements.</p></div></article>
+        <article class="panel target-mini"><div class="panel-heading"><div><h3>Reduction target</h3><p>Illustrative annual goal</p></div><span class="target-percent">20%</span></div><div class="progress-track"><span style="width:42%"></span></div><div class="progress-labels"><span>Progress: 42%</span><span>Target: −20%</span></div><a href="#planner" class="text-link">Plan your target <span>→</span></a></article>
+      </div>
+      <div class="report-bar"><div class="report-icon">↓</div><div><strong>Take the numbers with you</strong><p>Generate an executive PDF summary of the demo dashboard and your current reduction target.</p></div><button class="btn btn-primary" id="pdfBtn">Download PDF report ↗</button></div>
+    </section>
+
+    <section class="tool-section" id="calculator">
+      <div class="section-wrap section-block">
+        <div class="section-heading"><div><div class="eyebrow">TOOL 01 · MEASURE</div><h2>Carbon calculator</h2></div><p>Estimate operational emissions from energy consumed. Change the emission factor to test a different assumption.</p></div>
+        <div class="tool-layout">
+          <form class="panel tool-form" id="calculatorForm">
+            <div class="form-title"><span class="form-step">01</span><div><h3>Enter trip details</h3><p>Use one trip or vehicle movement.</p></div></div>
+            <label for="vehicleMode">Energy / vehicle type</label>
+            <select id="vehicleMode"><option value="diesel">Diesel vehicle</option><option value="petrol">Petrol vehicle</option><option value="cng">CNG vehicle</option><option value="electricity">Electric vehicle</option></select>
+            <div class="form-row">
+              <div><label for="distance">Distance travelled</label><div class="input-unit"><input id="distance" type="number" min="0" step="any" value="250" required><span>km</span></div></div>
+              <div><label for="consumption">Energy consumed</label><div class="input-unit"><input id="consumption" type="number" min="0" step="any" value="32" required><span id="energyUnit">L</span></div></div>
+            </div>
+            <label for="factor">Emission factor <span class="label-hint">editable assumption</span></label>
+            <div class="input-unit"><input id="factor" type="number" min="0" step="any" value="2.68" required><span id="factorUnit">kg CO₂ / L</span></div>
+            <div class="factor-help" id="factorHelp">Illustrative diesel combustion factor. Actual factors vary by fuel composition and accounting boundary.</div>
+            <button type="submit" class="btn btn-primary btn-full">Calculate emissions <span>→</span></button>
+            <button type="button" class="btn btn-quiet btn-full" id="calcReset">Reset calculator</button>
+          </form>
+          <article class="panel result-panel">
+            <div class="result-top"><div><div class="eyebrow">ESTIMATED RESULT</div><h3>Your trip footprint</h3></div><span class="result-status"><i></i> Calculated locally</span></div>
+            <div class="result-number" id="calcResult">85.76 <span>kg CO₂</span></div>
+            <p class="result-explain" id="calcExplanation">32 L × 2.68 kg CO₂/L = 85.76 kg CO₂</p>
+            <div class="result-divider"></div>
+            <div class="result-stat-row"><div><span>Emissions per km</span><strong id="perKm">0.343 kg/km</strong></div><div><span>Energy used</span><strong id="energyUsed">32 L</strong></div></div>
+            <div class="result-callout"><span>✦</span><p><strong>Scenario insight</strong><br><span id="calcInsight">Try reducing energy consumption or testing a different factor to see how the estimate changes.</span></p></div>
+            <p class="method-note">Formula: energy consumed × emission factor. This simple calculator excludes vehicle manufacture, infrastructure and other lifecycle emissions unless reflected in the factor you enter.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="compare">
+      <div class="section-heading"><div><div class="eyebrow">TOOL 02 · COMPARE</div><h2>Choose the right freight mode</h2></div><p>Compare illustrative estimates for a common freight movement. Adjust the assumptions to explore how the ranking changes.</p></div>
+      <div class="compare-controls panel">
+        <div><label for="compareDistance">Distance</label><div class="input-unit"><input id="compareDistance" type="number" min="1" value="800"><span>km</span></div></div>
+        <div><label for="compareWeight">Shipment weight</label><div class="input-unit"><input id="compareWeight" type="number" min="0.01" step="any" value="5"><span>tonnes</span></div></div>
+        <div><label for="compareCost">Cost multiplier</label><div class="input-unit"><input id="compareCost" type="number" min="0.1" step="0.1" value="1"><span>×</span></div></div>
+        <button class="btn btn-primary" id="compareBtn">Update comparison</button>
+      </div>
+      <div class="comparison-table-wrap panel">
+        <table class="comparison-table">
+          <thead><tr><th>Transport mode</th><th>Emission factor <small>kg CO₂ / tonne-km</small></th><th>Est. emissions</th><th>Indicative cost</th><th>Est. transit time</th></tr></thead>
+          <tbody id="comparisonRows"></tbody>
+        </table>
+        <p class="table-note">All mode factors, cost rates and transit times are illustrative demonstration assumptions, not verified carrier quotes or official emission factors. Electric vehicle estimates represent a simplified operational estimate and depend on electricity mix.</p>
+      </div>
+      <div class="mode-editor panel">
+        <div class="panel-heading"><div><h3>Adjust mode emission factors</h3><p>Change any factor and update the comparison to test a scenario.</p></div><button class="btn btn-quiet btn-small" id="resetFactors">Restore defaults</button></div>
+        <div class="factor-grid" id="factorEditors"></div>
+      </div>
+      <div class="comparison-callout"><span>↗</span><p><strong>Decision tip:</strong> the lowest-emission option may not always be the fastest or cheapest. Compare service requirements, capacity, route availability and cost before making a real shipment decision.</p></div>
+    </section>
+
+    <section class="tool-section" id="planner">
+      <div class="section-wrap section-block">
+        <div class="section-heading"><div><div class="eyebrow">TOOL 03 · REDUCE</div><h2>Turn ambition into a carbon budget</h2></div><p>Set a reduction goal against your baseline and see the maximum emissions allowed under that target.</p></div>
+        <div class="planner-layout">
+          <form class="panel tool-form" id="plannerForm">
+            <div class="form-title"><span class="form-step">03</span><div><h3>Define your target</h3><p>Use a consistent reporting period.</p></div></div>
+            <label for="baseline">Baseline emissions</label><div class="input-unit"><input id="baseline" type="number" min="0" step="any" value="42800" required><span>kg CO₂</span></div>
+            <label for="reductionTarget">Target reduction</label><div class="range-heading"><strong id="targetValue">20%</strong><span>Choose 1–80%</span></div><input id="reductionTarget" type="range" min="1" max="80" value="20">
+            <label for="period">Target period</label><select id="period"><option value="12">12 months</option><option value="6">6 months</option><option value="3">3 months</option><option value="1">1 month</option></select>
+            <button type="submit" class="btn btn-primary btn-full">Calculate carbon budget <span>→</span></button>
+          </form>
+          <article class="panel planner-result">
+            <div class="eyebrow">YOUR REDUCTION PLAN</div><h3>Make the target measurable.</h3>
+            <div class="budget-highlight"><span>Target emissions budget</span><strong id="budgetResult">34,240 <small>kg CO₂</small></strong></div>
+            <div class="budget-grid"><div><span>Required reduction</span><strong id="requiredReduction">8,560 kg</strong></div><div><span>Average monthly budget</span><strong id="monthlyBudget">2,853 kg</strong></div></div>
+            <div class="budget-visual"><div class="budget-row"><span>Baseline</span><div class="budget-track"><i id="baselineBar" style="width:100%"></i></div><strong id="baselineLabel">42,800</strong></div><div class="budget-row"><span>Target</span><div class="budget-track target-track"><i id="targetBar" style="width:80%"></i></div><strong id="targetLabel">34,240</strong></div></div>
+            <div class="result-callout"><span>◎</span><p><strong>Management action</strong><br><span id="plannerInsight">Find 8,560 kg CO₂ of reductions across the selected reporting period, then review progress monthly.</span></p></div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section-wrap section-block" id="contact">
+      <div class="contact-panel">
+        <div class="contact-copy"><div class="eyebrow">CONTACT & ENQUIRIES</div><h2>Let's make every movement count.</h2><p>Have a question about the CarbonWise prototype? Explore the resources or use the demo enquiry form to see how a business contact workflow could look.</p><div class="contact-details"><div><span class="contact-icon">✉</span><div><small>Email</small><strong>hello@greenhaul.example</strong></div></div><div><span class="contact-icon">⌖</span><div><small>Demo location</small><strong>Vadodara, Gujarat, India</strong></div></div><div><span class="contact-icon">↗</span><div><small>Business</small><strong>GreenHaul Logistics (fictional)</strong></div></div></div></div>
+        <form class="contact-form" id="contactForm"><h3>Send a demo enquiry</h3><p>This prototype does not transmit messages to a server.</p><label for="contactName">Your name</label><input id="contactName" type="text" placeholder="Enter your name" required><label for="contactEmail">Email address</label><input id="contactEmail" type="email" placeholder="you@company.com" required><label for="enquiryType">What would you like to discuss?</label><select id="enquiryType"><option>Carbon reporting</option><option>Transport comparison</option><option>Reduction planning</option><option>General enquiry</option></select><label for="message">Message</label><textarea id="message" rows="3" placeholder="Tell us a little about your question..." required></textarea><button type="submit" class="btn btn-primary btn-full">Preview enquiry <span>→</span></button><div id="contactFeedback" class="form-feedback" role="status"></div></form>
+      </div>
+      <div class="resource-links"><span>Useful references</span><a href="https://ghgprotocol.org/" target="_blank" rel="noopener noreferrer">GHG Protocol ↗</a><a href="https://www.iea.org/" target="_blank" rel="noopener noreferrer">International Energy Agency ↗</a><a href="https://www.indianrailways.gov.in/" target="_blank" rel="noopener noreferrer">Indian Railways ↗</a><a href="https://www.moes.gov.in/" target="_blank" rel="noopener noreferrer">Ministry of Earth Sciences ↗</a></div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <a class="brand footer-brand" href="#home"><img src="images/carbonwise-mark.svg" alt="" class="brand-mark"><span class="brand-copy"><strong>CarbonWise</strong><small>Measure. Compare. Reduce.</small></span></a>
+    <p>Academic prototype · Illustrative data · Built for learning and demonstration</p>
+    <a href="#top" class="back-top">Back to top ↑</a>
+  </footer>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
