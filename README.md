@@ -1,6 +1,6 @@
 # CarbonWise — Simple Website
 
-A one-page demo for GreenHaul Logistics, a fictional business. Sections: Home, Calculator, Dashboard, About, Contact.
+A one-page demo for GreenHaul Logistics, a fictional business. Sections, in order: Home, About, Calculator, Dashboard, Contact.
 
 ## Files
 - `index.html`: content and embedded logo
@@ -19,7 +19,7 @@ Illustrative defaults only:
 These values are illustrative, not certified reporting factors. Verify appropriate factors before formal use.
 
 ## PDF
-Click “Print / Save report as PDF”. In the browser print dialog, choose “Save as PDF”. No external PDF library is used.
+Click “Print / Save report as PDF”. The report includes the selected energy type, distance, consumption, emission factor, calculated emissions, emissions per kilometre, formula, and a note about illustrative factors. In the browser print dialog, choose “Save as PDF”. No external PDF library is used.
 
 ## Contact form
 The form only displays a local preview. It does not send or store messages.

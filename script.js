@@ -30,6 +30,32 @@ function energyChanged(){
  calculate();
 }
 function reset(){energy.value='diesel';distance.value=100;consumption.value=10;energyChanged();}
+function printReport(){
+  calculate();
+  const item=factors[energy.value];
+  const d=Number(distance.value), c=Number(consumption.value), f=Number(factor.value);
+  if(!Number.isFinite(d)||d<=0||!Number.isFinite(c)||c<=0||!Number.isFinite(f)||f<0)return;
+  const emissions=c*f;
+  const area=$('printReportArea');
+  area.innerHTML = `
+    <h1>CarbonWise</h1>
+    <p class="print-subtitle">Vehicle Carbon Footprint Report · Generated ${new Date().toLocaleString('en-IN')}</p>
+    <p>This report summarises the inputs and estimate calculated in the CarbonWise vehicle calculator.</p>
+    <div class="print-result"><p>Estimated emissions</p><strong>${fmt(emissions)} kg CO₂</strong><p>${fmt(emissions/d,4)} kg CO₂ per kilometre</p></div>
+    <h2>Calculation inputs</h2>
+    <table><tbody>
+      <tr><th>Energy type</th><td>${item.label==='CNG consumed'?'CNG':energy.options[energy.selectedIndex].text}</td></tr>
+      <tr><th>Distance travelled</th><td>${fmt(d)} km</td></tr>
+      <tr><th>Energy consumed</th><td>${fmt(c)} ${item.unit}</td></tr>
+      <tr><th>Emission factor</th><td>${fmt(f,4)} ${item.factorUnit}</td></tr>
+    </tbody></table>
+    <h2>Calculation</h2>
+    <p><b>Estimated emissions = energy consumed × emission factor</b></p>
+    <p>${fmt(c)} ${item.unit} × ${fmt(f,4)} ${item.factorUnit} = <b>${fmt(emissions)} kg CO₂</b></p>
+    <p>Emissions per kilometre = ${fmt(emissions)} kg CO₂ ÷ ${fmt(d)} km = <b>${fmt(emissions/d,4)} kg CO₂/km</b></p>
+    <p class="print-note">Important: This is an estimate based on the values entered by the user. The default emission factors are illustrative and have not been independently verified. For formal reporting, confirm the appropriate factor for the energy source, location, and reporting year.</p>`;
+  window.print();
+}
 function contactPreview(e){
  e.preventDefault();
  const name=$('name').value.trim();
@@ -42,7 +68,7 @@ document.addEventListener('DOMContentLoaded',()=>{
  energy.addEventListener('change',energyChanged);
  $('calcForm').addEventListener('submit',calculate);
  $('reset').addEventListener('click',reset);
- $('pdf').addEventListener('click',()=>{calculate();window.print();});
+ $('pdf').addEventListener('click',printReport);
  $('contactForm').addEventListener('submit',contactPreview);
  const nav=$('nav'),menu=$('menu');
  menu.addEventListener('click',()=>{const open=nav.classList.toggle('open');menu.setAttribute('aria-expanded',String(open));menu.setAttribute('aria-label',open?'Close navigation':'Toggle navigation');});
